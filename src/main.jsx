@@ -5,9 +5,9 @@ import AppTheme from './theme/AppTheme';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-	<React.StrictMode>
-		<AppTheme>
-			<App />
-		</AppTheme>
-	</React.StrictMode>
+		<React.StrictMode>
+			<AppTheme>
+				<App />
+			</AppTheme>
+		</React.StrictMode>
 );

@@ -1,12 +1,12 @@
 import { Typography } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
+import { Link } from 'react-router-dom';
 
 const Brand = () => {
-
-    const onclickBrand = (event) => {
-        event.preventDefault();
-        console.log('Brand clicked');
-    }
+	// const onclickBrand = (event) => {
+	// 	event.preventDefault();
+	// 	console.log('Brand clicked');
+	// };
 
 	return (
 		<Grid2
@@ -17,7 +17,7 @@ const Brand = () => {
 				<img
 					src='https://res.cloudinary.com/dhulr5xwe/image/upload/v1675816226/dev/ppt5y9chm3rajufh83ea.png'
 					height={40}
-                    onClick={onclickBrand}
+					// onClick={onclickBrand}
 				/>
 			</Grid2>
 			<Grid2
@@ -30,10 +30,13 @@ const Brand = () => {
 					variant='h6'
 					noWrap
 					component='div'
-                    onClick={onclickBrand}
-					sx={{ display: { xs: 'block', sm: 'block' }, fontSize: 24 }}
+					// onClick={onclickBrand}
+					sx={{
+						display: { xs: 'block', sm: 'block' },
+						fontSize: 24,
+					}}
 				>
-					CRAVATE
+					<Link to={'/'}><Typography sx={{color: 'white', fontSize: 28}}>CRAVATE</Typography></Link>
 				</Typography>
 			</Grid2>
 		</Grid2>

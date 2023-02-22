@@ -1,0 +1,85 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "nameProduct": "Paco Rabanne 1",
+            "description": "A simple description for item 1",
+            "urlImage": "https://cdn.shopify.com/s/files/1/0050/9761/9505/products/perfume-1-million-para-hombre-de-paco-rabanne-eau-de-toillete-100ml-666434_1800x1800.jpg?v=1623860138",
+            "price": 20.50,
+            "stock": 10,
+            "idCategory": 1
+        },
+        {
+            "id": 2,
+            "nameProduct": "Paco Rabanne 2",
+            "description": "A simple description for item 2",
+            "urlImage": "https://cdn.shopify.com/s/files/1/0050/9761/9505/products/perfume-1-million-para-hombre-de-paco-rabanne-eau-de-toillete-100ml-666434_1800x1800.jpg?v=1623860138",
+            "price": 20.50,
+            "stock": 10,
+            "idCategory": 1
+        },
+        {
+            "id": 3,
+            "nameProduct": "Paco Rabanne 3",
+            "description": "A simple description for item 3",
+            "urlImage": "https://cdn.shopify.com/s/files/1/0050/9761/9505/products/perfume-1-million-para-hombre-de-paco-rabanne-eau-de-toillete-100ml-666434_1800x1800.jpg?v=1623860138",
+            "price": 20.50,
+            "stock": 10,
+            "idCategory": 1
+        },
+        {
+            "id": 4,
+            "nameProduct": "Paco Rabanne 4",
+            "description": "A simple description for item 4",
+            "urlImage": "https://cdn.shopify.com/s/files/1/0050/9761/9505/products/perfume-1-million-para-hombre-de-paco-rabanne-eau-de-toillete-100ml-666434_1800x1800.jpg?v=1623860138",
+            "price": 20.50,
+            "stock": 10,
+            "idCategory": 2
+        },
+        {
+            "id": 5,
+            "nameProduct": "Paco Rabanne 5",
+            "description": "A simple description for item 5",
+            "urlImage": "https://cdn.shopify.com/s/files/1/0050/9761/9505/products/perfume-1-million-para-hombre-de-paco-rabanne-eau-de-toillete-100ml-666434_1800x1800.jpg?v=1623860138",
+            "price": 20.50,
+            "stock": 10,
+            "idCategory": 2
+        },
+        {
+            "id": 6,
+            "nameProduct": "Paco Rabanne 6",
+            "description": "A simple description for item 6",
+            "urlImage": "https://cdn.shopify.com/s/files/1/0050/9761/9505/products/perfume-1-million-para-hombre-de-paco-rabanne-eau-de-toillete-100ml-666434_1800x1800.jpg?v=1623860138",
+            "price": 20.50,
+            "stock": 10,
+            "idCategory": 3
+        },
+        {
+            "id": 7,
+            "nameProduct": "Paco Rabanne 7",
+            "description": "A simple description for item 7",
+            "urlImage": "https://m.media-amazon.com/images/I/41eMuNcKmqL._AC_.jpg",
+            "price": 20.50,
+            "stock": 10,
+            "idCategory": 3
+        },
+        {
+            "id": 8,
+            "nameProduct": "Paco Rabanne 7",
+            "description": "A simple description for item 8",
+            "urlImage": "https://m.media-amazon.com/images/I/41eMuNcKmqL._AC_.jpg",
+            "price": 20.50,
+            "stock": 10,
+            "idCategory": 3
+        },
+        {
+            "id": 9,
+            "nameProduct": "Paco Rabanne 7",
+            "description": "A simple description for item 9",
+            "urlImage": "https://m.media-amazon.com/images/I/41eMuNcKmqL._AC_.jpg",
+            "price": 20.50,
+            "stock": 10,
+            "idCategory": 3
+        }
+    ]
+}

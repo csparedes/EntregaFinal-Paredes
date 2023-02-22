@@ -1,0 +1,19 @@
+{
+	"categories": [
+		{
+			"id": 1,
+			"nameCategory": "Sport",
+			"urlImage": ""
+		},
+		{
+			"id": 2,
+			"nameCategory": "Daily",
+			"urlImage": ""
+		},
+		{
+			"id": 3,
+			"nameCategory": "Special",
+			"urlImage": ""
+		}
+	]
+}
