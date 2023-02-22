@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemCount from './ItemCount';
 
-const ItemDetail = () => {
+const ItemDetailContainer = () => {
 	const { id } = useParams();
 	const [item, setItem] = useState({});
 
@@ -48,4 +48,4 @@ const ItemDetail = () => {
 	);
 };
 
-export default ItemDetail;
+export default ItemDetailContainer;

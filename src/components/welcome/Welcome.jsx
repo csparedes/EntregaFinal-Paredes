@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from '@mui/material';
-import ItemList from '../items/ItemList';
+import ItemListContainer from '../items/ItemListContainer';
 
 const Welcome = () => {
 	return (
@@ -26,7 +26,7 @@ const Welcome = () => {
 						<Typography variant='h2'>Bienvenid@ a CRAVATE</Typography>
 					</Grid>
 					<Grid item>
-						<ItemList />
+						<ItemListContainer />
 					</Grid>
 				</Grid>
 			</Box>

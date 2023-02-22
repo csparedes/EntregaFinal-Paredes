@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Item from './Item';
 
-const ItemList = () => {
+const ItemListContainer = () => {
 	const [itemList, setItemList] = useState([]);
 	const { id } = useParams();
 	useEffect(() => {
@@ -44,4 +44,4 @@ const ItemList = () => {
 	);
 };
 
-export default ItemList;
+export default ItemListContainer;
