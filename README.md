@@ -7,3 +7,7 @@
 ## Funcionamiento del React Router Dom
 
 ![Demostracion de la función de rutas](https://res.cloudinary.com/dhulr5xwe/image/upload/v1677108583/dev/njhlm356ijdkirmresgw.gif)
+
+### Nota
+
+> En este punto se llega hasta la preentrega 2 del Curso de React
