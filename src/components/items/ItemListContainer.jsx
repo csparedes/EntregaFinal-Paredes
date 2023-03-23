@@ -1,7 +1,17 @@
-import { Box, Grid } from '@mui/material';
+import {
+	Box,
+	CircularProgress,
+	Grid,
+} from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Item from './Item';
+
+import {
+	getFirestore,
+	collection,
+	getDocs,
+} from 'firebase/firestore';
 
 const ItemListContainer = () => {
 	const [itemList, setItemList] = useState([]);
@@ -12,12 +22,15 @@ const ItemListContainer = () => {
 
 	const extractedData = async (id) => {
 		try {
-			const data = await fetch('/data/items.json');
-			const list = await data.json();
+			const db = getFirestore();
+			const items = collection(db, 'items');
+			const itemsListFirebase = await getDocs(items);
+			const listAux = [];
+			itemsListFirebase.docs.map((items) => listAux.push({...items.data(), id: items.id}));
 			setItemList(
 				!id
-					? list.items
-					: list.items.filter((item) => item.idCategory === parseInt(id))
+					? listAux
+					: listAux.filter((item) => item.idCategory === id)
 			);
 		} catch (error) {
 			console.log('Error');
@@ -27,19 +40,32 @@ const ItemListContainer = () => {
 
 	return (
 		<Box sx={{ p: 1 }}>
-			<Grid
-				container
-				alignContent='center'
-				justifyContent='center'
-				spacing={2}
-			>
-				{itemList.map((item, index) => (
-					<Item
-						key={index}
-						{...item}
-					/>
-				))}
-			</Grid>
+			{itemList.length === 0 ? (
+				<Grid
+					container
+					direction='column'
+					alignItems='center'
+					justifyContent='center'
+				>
+					<Grid item>
+						<CircularProgress />
+					</Grid>
+				</Grid>
+			) : (
+				<Grid
+					container
+					alignContent='center'
+					justifyContent='center'
+					spacing={2}
+				>
+					{itemList.map((item, index) => (
+						<Item
+							key={index}
+							{...item}
+						/>
+					))}
+				</Grid>
+			)}
 		</Box>
 	);
 };

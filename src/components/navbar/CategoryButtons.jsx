@@ -10,9 +10,9 @@ const CategoryButtons = () => {
 			color='secondary'
             sx={{paddingX: 2}}
 		>
-			<Button><NavLink to={`/category/1`}><Typography sx={{color: 'white'}} >Sport</Typography></NavLink></Button>
-			<Button><NavLink to={`/category/2`}><Typography sx={{color: 'white'}} >Daily</Typography></NavLink></Button>
-			<Button><NavLink to={`/category/3`}><Typography sx={{color: 'white'}} >Special</Typography></NavLink></Button>
+			<Button><NavLink to={`/category/jeN4RIc74sIOEj2FhwRz`}><Typography sx={{color: 'white'}} >Sport</Typography></NavLink></Button>
+			<Button><NavLink to={`/category/dUNsZKtHboooF7pseSDS`}><Typography sx={{color: 'white'}} >Daily</Typography></NavLink></Button>
+			<Button><NavLink to={`/category/M1kRAeHIlV93PuPIdeA8`}><Typography sx={{color: 'white'}} >Special</Typography></NavLink></Button>
 		</ButtonGroup>
 	);
 };

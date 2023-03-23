@@ -12,7 +12,7 @@ const CartWidget = ({ numberItemsCar = 0 }) => {
 					color='inherit'
 				>
 					<Badge
-						badgeContent={numberItemsCar}
+						badgeContent={numberItemsCar === 0 ? undefined: numberItemsCar}
 						color='error'
 					>
 						<Link to='/cart'>
